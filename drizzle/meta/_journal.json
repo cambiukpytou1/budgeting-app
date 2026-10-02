@@ -1,0 +1,62 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1790688103717,
+      "tag": "0001_initial",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1790688103717,
+      "tag": "0002_add_budgeting_tables",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1790690805500,
+      "tag": "0003_add_transaction_categorization_status",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1790690805500,
+      "tag": "0004_add_account_balance_history",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1790691159881,
+      "tag": "0005_track_account_classification_version",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "6",
+      "when": 1790724628552,
+      "tag": "0006_add_goals_splits_and_tags",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "6",
+      "when": 1790776901171,
+      "tag": "0007_add_merchant_category_rules",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "6",
+      "when": 1790782506948,
+      "tag": "0008_add_account_institution",
+      "breakpoints": true
+    }
+  ]
+}
