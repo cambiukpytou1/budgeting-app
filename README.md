@@ -19,10 +19,17 @@ bun install
 # run the client and server per space.json
 ```
 
+## Database
+
+- The full schema is defined by the versioned SQL migrations in `drizzle/`
+  (applied in order via `drizzle/meta/_journal.json`). A fresh database is
+  created from these migrations at runtime — no seed or placeholder database
+  is needed.
+- `app.db` (the live database with real transactions and connection state)
+  is gitignored and never committed.
+
 ## Notes
 
-- `app.db` (the live transaction database) is gitignored and never committed.
-  Bank credentials are used transiently during SimpleFIN import/refresh and are
-  not stored in the repo.
-- Copy `.env.example` to `.env` if/when local secrets are needed (also
-  gitignored).
+- No live SimpleFIN credentials or financial data are committed to this
+  repository. The app stores its SimpleFIN connection in its own runtime
+  database (also gitignored) so sync can refresh automatically.
