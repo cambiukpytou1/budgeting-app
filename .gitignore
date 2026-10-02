@@ -1,0 +1,28 @@
+# Runtime database (holds live bank data) - never commit
+app.db
+app.db-shm
+app.db-wal
+*.db
+*.db-shm
+*.db-wal
+
+# Dependencies
+node_modules/
+.bun-cache/
+
+# Build output
+client/dist/
+client/dist-cvm/
+server/dist/
+*.tsbuildinfo
+
+# Local tooling / audits
+.harness/
+audits/
+.xmds-icon
+
+# Secrets
+.env
+.env.*
+*.pem
+*.key
